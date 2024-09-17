@@ -286,24 +286,6 @@ Add a new LlamaCpp model with the provided model name on the web uI.
 
 ## Adding your own RAG pipeline
 
-## Ollama
-Install ollama and start the application.
-
-Pull your model (e.g):
-
-```
-ollama pull llama3.1:8b
-ollama pull nomic-embed-text
-```
-
-Setup LLM and Embedding model on Resources tab with type OpenAI. Set these model parameters to connect to Ollama:
-
-```
-api_key: ollama
-base_url: http://localhost:11434/v1/
-model: gemma2:2b (for llm) | nomic-embed-text (for embedding)
-```
-
 #### Custom reasoning pipeline
 
 First, check the default pipeline implementation in
@@ -321,6 +303,24 @@ Check sample implementation in `libs/ktem/ktem/index/file/graph`
 
 Please refer to the [Developer Guide](https://cinnamon.github.io/kotaemon/development/)
 for more details.
+
+## Ollama
+Install ollama and start the application.
+
+Pull your model (e.g):
+
+```
+ollama pull llama3.1:8b
+ollama pull nomic-embed-text
+```
+
+Setup LLM and Embedding model on Resources tab with type OpenAI. Set these model parameters to connect to Ollama:
+
+```
+api_key: ollama
+base_url: http://localhost:11434/v1/
+model: gemma2:2b (for llm) | nomic-embed-text (for embedding)
+```
 
 ## Star History
 
